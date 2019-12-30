@@ -38,6 +38,6 @@ class GoalsController extends Controller
             $query->orderBy('goals', 'desc');
         }])->orderBy('start_date')->find($season->id);
 
-        return response()->json(['players' => $seasonPlayers->players])
+        return response()->json(['players' => $seasonPlayers->players]);
     }
 }

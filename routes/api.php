@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/latest', 'GoalsController@latest');
 Route::get('/season/{season}', 'GoalsController@season');
+Route::post('/player', 'PlayersController@create');
